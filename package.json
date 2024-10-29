@@ -1,0 +1,21 @@
+{
+  "name": "upload-cli",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "bin": {
+    "test-upload-cli": "./index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ali-oss": "^6.21.0",
+    "commander": "^12.1.0",
+    "copy-paste": "^1.5.3",
+    "js-yaml": "^4.1.0",
+    "optional": "^0.1.4",
+    "prompts": "^2.4.2",
+    "tinify": "^1.7.1"
+  }
+}
