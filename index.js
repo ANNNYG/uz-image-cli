@@ -1,6 +1,4 @@
 #!/usr/bin/env node
-const chalk = require('chalk')
-
 const { startProgram, checkConfig } = require("./lib/program.js")
 const { handleZip } = require("./lib/zip.js")
 const { handleUpload } = require('./lib/upload.js')

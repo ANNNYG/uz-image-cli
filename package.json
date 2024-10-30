@@ -1,14 +1,22 @@
 {
-  "name": "upload-cli",
+  "name": "uz-image-cli",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "bin": {
-    "test-upload-cli": "./index.js"
+    "uz-image": "./index.js"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "npm",
+    "package",
+    "uz-image-cli"
+  ],
+  "author": "yuop_enner",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ANNNYG/uz-image-cli.git"
+  },
   "dependencies": {
     "ali-oss": "^6.21.0",
     "commander": "^12.1.0",
@@ -17,5 +25,12 @@
     "optional": "^0.1.4",
     "prompts": "^2.4.2",
     "tinify": "^1.7.1"
+  },
+  "bugs": {
+    "url": "https://github.com/ANNNYG/uz-image-cli/issues"
+  },
+  "homepage": "https://github.com/ANNNYG/uz-image-cli#readme",
+  "engines": {
+    "node": ">=16.8.1"
   }
 }
