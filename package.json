@@ -1,21 +1,33 @@
 {
   "name": "uz-image-cli",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "",
   "main": "index.js",
   "bin": {
-    "uz-image": "./index.js"
+    "uz-image": "bin/index.js",
+    "dev":"index.cjs"
+  },
+  "scripts": {
+    "build": "rollup -c"
   },
   "keywords": [
     "npm",
     "package",
     "uz-image-cli"
   ],
+  "type": "commonjs",
   "author": "yuop_enner",
   "license": "ISC",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ANNNYG/uz-image-cli.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ANNNYG/uz-image-cli/issues"
+  },
+  "homepage": "https://github.com/ANNNYG/uz-image-cli#readme",
+  "engines": {
+    "node": ">=16.8.1"
   },
   "dependencies": {
     "ali-oss": "^6.21.0",
@@ -26,11 +38,10 @@
     "prompts": "^2.4.2",
     "tinify": "^1.7.1"
   },
-  "bugs": {
-    "url": "https://github.com/ANNNYG/uz-image-cli/issues"
-  },
-  "homepage": "https://github.com/ANNNYG/uz-image-cli#readme",
-  "engines": {
-    "node": ">=16.8.1"
+  "devDependencies": {
+    "rollup": "^4.24.4",
+    "@rollup/plugin-commonjs": "^28.0.1",
+    "@rollup/plugin-json": "^6.1.0",
+    "@rollup/plugin-node-resolve": "^15.3.0"
   }
 }

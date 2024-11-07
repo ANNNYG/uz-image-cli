@@ -1,7 +1,7 @@
 #!/usr/bin/env node
-const { startProgram, checkConfig } = require("./lib/program.js")
-const { handleZip } = require("./lib/zip.js")
-const { handleUpload } = require('./lib/upload.js')
+const { startProgram, checkConfig } = require("./lib/program.cjs")
+const { handleZip } = require("./lib/zip.cjs")
+const { handleUpload } = require('./lib/upload.cjs')
 
 const start = async () => {
   await checkConfig()
